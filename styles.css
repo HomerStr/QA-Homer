@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;  
+    background-image: url("stars-2.jpg");  
+    background-color: #d4c7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(240, 206, 243);
+}
+
+.card {
+    width: 400px;
+    height: 650px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    width: 400px;
+    height: 650px;
+    background-image: url('fon1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    bottom: -60px;
+    left: calc(50% - 60px);
+    background-image: url('https://picsum.photos/120/120');
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    padding: 30px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 90%;
+        height: auto;
+    }
+    
+    .header {
+        height: 150px;
+    }
+    
+    .avatar {
+        width: 80px;
+        height: 80px;
+        bottom: -40px;
+        left: calc(50% - 40px);
+    }
+}
